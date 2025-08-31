@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://redis:6379/1",  # Use Docker service name
+        "LOCATION": "redis://localhost:6379/1",  # Use Docker service name
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
